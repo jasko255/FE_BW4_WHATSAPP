@@ -1,11 +1,18 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import Login from './Components/Login';
+import Sidebar from './Components/Sidebar';
+// import MainApp from './Components/MainApp';
+// import Login from './Components/Login';
 
 function App() {
   return (
     <div className="App">
-     <Login />
+    
+    <div className="app_body">
+    <Sidebar />
+
+    </div>
+
     </div>
   );
 }
