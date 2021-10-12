@@ -8,6 +8,17 @@ import { SearchOutlined } from '@material-ui/icons'
 import SidebarChat from './SidebarChat'
 
 function Sidebar() {
+
+
+  const createChat = () => {
+    const roomName = prompt('Please enter name for chat')
+
+    if(roomName){
+        
+    }
+
+}
+
   return (
     <div className='sidebar'>
       <div className="sidebar__header">
@@ -17,7 +28,7 @@ function Sidebar() {
         <DonutLargeIcon />
           </IconButton> 
           <IconButton>
-        <ChatIcon />
+        <ChatIcon  onClick={createChat}/>
           </IconButton>
         <IconButton>
         <MoreVertIcon />
@@ -32,7 +43,7 @@ function Sidebar() {
         </div>
       </div>
       <div className="sidebar__chats">
-        <SidebarChat addNewChat/>
+        {/* <SidebarChat addNewChat/> */}
         <SidebarChat />
         <SidebarChat />
         <SidebarChat />
