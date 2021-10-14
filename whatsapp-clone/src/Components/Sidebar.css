@@ -58,3 +58,80 @@
     background-color: white;
     overflow: scroll;
 }
+
+
+.profile__section{
+    display: flex;
+    flex-direction: column;
+    /* flex: 0.35; */
+    /* width: 0.35; */
+    position: fixed;
+    left: -100%;
+    transition: 850ms;
+}
+
+.profile__section.active{
+    flex: 0.35;
+    min-width: 31vw;
+     left: 5vw;
+     z-index: 1;
+    transition: 350ms;
+}
+
+.profile__header{
+    display: flex;
+    justify-content: left;
+    background-color:#25D366;
+    padding: 20px;
+    border-right: 1px solid lightgray;
+    
+}
+
+.profile__body{
+    flex: 1;   
+    background-color: white;
+   /* padding: 5%; */
+    /* overflow: scroll; */
+}
+
+ h6{
+    color: #25D366;
+}
+
+.avatar__box{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f6f6f6;
+}
+
+ .info-field{
+    
+    display: flex;
+    justify-content: center;
+     background-color: lightgrey;
+    
+     padding: 1rem; 
+
+ }
+.name__field > .MuiSvgIcon-root{
+
+    margin-left: 75%;
+} 
+
+.about__input > .MuiSvgIcon-root{
+
+    margin-left: auto;
+    display: inline-block;
+}
+.name__field{
+    padding: 1rem;
+}
+
+.about{
+    padding: 1rem;
+}
+.info-field > p{
+    overflow-wrap: normal;
+}
