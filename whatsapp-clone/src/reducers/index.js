@@ -2,47 +2,54 @@ import { initialState } from '../store'
 
 
 
-const mainReducer = (state = initialState, action) => {
+const mainReducer = (store = initialState, action) => {
   switch (action.type) {
-    case 'INIT_SOCKET':
+    // case 'INIT_SOCKET':
     
 
-      return {
+    //   return {
       
-        ...state
+    //     ...state
         
          
         
-      }
+    //   }
 
-    case 'SET_USER_INFO':
-      return {
-        ...state
+    // case 'SET_USER_INFO':
+    //   return {
+    //     ...state
         
-      }
+    //   }
 
-      case 'SET_ACTIVE_CHAT':
-        return {
-          ...state
+    //   case 'SET_ACTIVE_CHAT':
+    //     return {
+    //       ...state
           
-        }
+    //     }
 
 
-        case 'SET_HISTORY':
-            return {
-              ...state
-            }
+    //     case 'SET_HISTORY':
+    //         return {
+    //           ...state
+    //         }
 
-            case 'NEW_MESSAGE ':
-                return {
-                  ...state
-                }
+            case "NEW_MESSAGE":
+  
+  // if (action.payload.message.sender === store.userInfo._id) 
+  //   store.socket.emit("outgoing-msg", action.payload)
+  //   console.log(store.chats);
+  console.log([...store.chat,  action.payload]);
+  return {
+    ...store,     
+     chat: [...store.chat,  action.payload]
+      
+  }
 
               
 
     default:
       //   console.log('NOT RECOGNIZED ACTION!')
-      return state
+      return store
   }
 }
 

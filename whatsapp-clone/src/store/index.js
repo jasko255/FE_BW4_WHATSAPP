@@ -7,12 +7,11 @@ export const initialState = {userInfo: {
     email: '',
     avatar: ''
 },
-chats: {
-    active: '',
-    list: {
-        Chat  :   []
-    }
-},
+ 
+    
+      chat  :   []
+    
+,
 socket: ''
 };
 

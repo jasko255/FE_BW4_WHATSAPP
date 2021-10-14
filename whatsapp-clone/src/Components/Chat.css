@@ -9,6 +9,7 @@ flex-direction: column;
     padding: 20px;
     display: flex;
     align-items: center;
+    background-color: #075E54;
     border-bottom: 1px solid lightgray;
 }
 

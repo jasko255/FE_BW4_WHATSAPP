@@ -35,6 +35,7 @@
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    background-color: #075E54;
     border-right: 1px solid lightgray;
 }
 
@@ -81,7 +82,7 @@
 .profile__header{
     display: flex;
     justify-content: left;
-    background-color:#25D366;
+    background-color:#075E54;
     padding: 20px;
     border-right: 1px solid lightgray;
     
