@@ -63,6 +63,7 @@
 
 .profile__section{
     display: flex;
+   
     flex-direction: column;
     /* flex: 0.35; */
     /* width: 0.35; */
@@ -73,6 +74,7 @@
 
 .profile__section.active{
     flex: 0.35;
+    height: 90vh;
     min-width: 31vw;
      left: 5vw;
      z-index: 1;
@@ -91,6 +93,7 @@
 .profile__body{
     flex: 1;   
     background-color: white;
+    
    /* padding: 5%; */
     /* overflow: scroll; */
 }
@@ -104,14 +107,16 @@
     justify-content: center;
     padding-top: 20px;
     padding-bottom: 20px;
-    background-color: #f6f6f6;
+    background-color: #ededed
+    ;
 }
 
  .info-field{
     
     display: flex;
     justify-content: center;
-     background-color: lightgrey;
+     background-color: #ededed
+     ;
     
      padding: 1rem; 
 
@@ -135,4 +140,8 @@
 }
 .info-field > p{
     overflow-wrap: normal;
+}
+.footer {
+    background-color: #ededed;
+    height: 27%;
 }

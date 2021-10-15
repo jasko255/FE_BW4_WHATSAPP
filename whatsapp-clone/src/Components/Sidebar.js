@@ -48,6 +48,11 @@ function Sidebar({user}) {
         <div className="sidebar__chats">
           {/* <SidebarChat addNewChat/> */}
           <SidebarChat />
+          <SidebarChat />
+          <SidebarChat />
+          <SidebarChat />
+          <SidebarChat />
+          <SidebarChat />
           
         </div>
       </div>
@@ -76,10 +81,14 @@ function Sidebar({user}) {
           <div className="info-field">
             <span>
               This is not your username or pin. 
+              This name will be visible <br/> to your WhatsApp contacts
 </span>
           </div>
           <div className="about"> <h6> About </h6>
           <div className="about__input"> <span> Hey there! I am using WhatsApp. </span> <Edit /> </div> </div>
+          <div className="footer">
+
+          </div>
         </div>
       </div>
     </>
