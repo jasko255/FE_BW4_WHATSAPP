@@ -4,13 +4,13 @@ import { useState } from "react";
 
 
 
-const Login = () => {
+const Login = ({setUsername}) => {
 
 
 
 const [input, setInput] = useState('')
 const [input2, setInput2] = useState('')
-
+console.log(setUsername);
 
 const submitData = (e) => {
    e.preventDefault()
@@ -34,7 +34,7 @@ return (
         <Form.Control type="password" onChange={(e)=> setInput2(e.target.value)}  placeholder="Password" />
       </Form.Group>
     
-      <Button  variant="primary" type="submit">
+      <Button onClick={setUsername} variant="primary" type="submit">
         Submit
       </Button>
     </Form>

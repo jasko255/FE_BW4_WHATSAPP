@@ -15,7 +15,7 @@ const mapDispatchToProps = (dispatch) => ({
 })
 
 
-function Chat({sendMess, chat } ) {
+function Chat({sendMess, chat, user } ) {
 
 
         const [input, setInput] = useState('')
@@ -36,7 +36,7 @@ function Chat({sendMess, chat } ) {
         <div className="chat__header">
         <Avatar />
         <div className="chat__headerInfo">
-            <h3>Room name</h3>
+            <h3>Tetiana</h3>
             <p>Last seen at...</p>
         </div>
         <div className="chat__headerRight">
@@ -53,12 +53,12 @@ function Chat({sendMess, chat } ) {
         </div>
         <div className="chat__body">
         {
-
+//${true && 'chat__receiver'}
             chat?.map((mes,i) => 
 
-               <p key={i} className={`chat__message ${true && 'chat__receiver'}`}>
+               <p key={i} className={`chat__message `}>
             <span className="chat__name">
-                Janusz
+                {user}
             </span>
             {mes}
             <span className="chat__timestamp">3:52pm</span>

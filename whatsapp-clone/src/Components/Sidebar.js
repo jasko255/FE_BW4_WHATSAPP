@@ -7,7 +7,7 @@ import MoreVertIcon from "@material-ui/icons/MoreVert";
 import { ArrowBack, Edit, SearchOutlined } from "@material-ui/icons";
 import SidebarChat from "./SidebarChat";
 
-function Sidebar() {
+function Sidebar({user}) {
   const createChat = () => {
     const roomName = prompt("Please enter name for chat");
 
@@ -48,10 +48,7 @@ function Sidebar() {
         <div className="sidebar__chats">
           {/* <SidebarChat addNewChat/> */}
           <SidebarChat />
-          <SidebarChat />
-          <SidebarChat />
-          <SidebarChat />
-          <SidebarChat />
+          
         </div>
       </div>
 
@@ -74,7 +71,7 @@ function Sidebar() {
           </div>
           <div className="name__field">
             <h6>Your name</h6>
-            <span> Ubeyt </span> <Edit />
+            <span> {user} </span> <Edit />
           </div>
           <div className="info-field">
             <span>
