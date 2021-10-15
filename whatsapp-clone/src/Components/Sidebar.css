@@ -1,0 +1,147 @@
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    flex: 0.35;
+}
+
+
+.sidebar__search {
+    display: flex;
+    align-items: center;
+    background-color: #f6f6f6;
+    height: 39px;
+    padding: 10px;
+}
+.sidebar__searchContainer{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    height: 35px;
+    border-radius: 20px;
+}
+
+.sidebar__searchContainer > .MuiSvgIcon-root {
+    color: gray;
+    padding-left: 7px;
+}
+
+.sidebar__searchContainer > input{
+    border: none;
+    margin-left: 10px;
+}
+
+.sidebar__header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #075E54;
+    border-right: 1px solid lightgray;
+}
+
+.sidebar__headerRight{
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+    min-width: 10vw;
+}
+
+.sidebar__headerRight > .MuiSvgIcon-root {
+    margin-right: 2vw;
+    font-size: 24px !important;
+}
+
+/* .MuiIconButton-root  */
+
+
+.sidebar__chats{
+    flex: 1;
+    background-color: white;
+    overflow: scroll;
+}
+
+
+.profile__section{
+    display: flex;
+   
+    flex-direction: column;
+    /* flex: 0.35; */
+    /* width: 0.35; */
+    position: fixed;
+    left: -100%;
+    transition: 850ms;
+}
+
+.profile__section.active{
+    flex: 0.35;
+    height: 90vh;
+    min-width: 31vw;
+     left: 5vw;
+     z-index: 1;
+    transition: 350ms;
+}
+
+.profile__header{
+    display: flex;
+    justify-content: left;
+    background-color:#075E54;
+    padding: 20px;
+    border-right: 1px solid lightgray;
+    
+}
+
+.profile__body{
+    flex: 1;   
+    background-color: white;
+    
+   /* padding: 5%; */
+    /* overflow: scroll; */
+}
+
+ h6{
+    color: #25D366;
+}
+
+.avatar__box{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #ededed
+    ;
+}
+
+ .info-field{
+    
+    display: flex;
+    justify-content: center;
+     background-color: #ededed
+     ;
+    
+     padding: 1rem; 
+
+ }
+.name__field > .MuiSvgIcon-root{
+
+    margin-left: 75%;
+} 
+
+.about__input > .MuiSvgIcon-root{
+
+    margin-left: auto;
+    display: inline-block;
+}
+.name__field{
+    padding: 1rem;
+}
+
+.about{
+    padding: 1rem;
+}
+.info-field > p{
+    overflow-wrap: normal;
+}
+.footer {
+    background-color: #ededed;
+    height: 27%;
+}
